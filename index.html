@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClinTrack Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ClinTrack Room Simulator</h1>
+  <div class="simulator">
+    <img src="simulator.png" alt="Room Layout" class="layout">
+    <img src="band1.png" class="band" id="band1" style="top: 500px; left: 100px;" draggable="true">
+    <img src="band2.png" class="band" id="band2" style="top: 500px; left: 300px;" draggable="true">
+
+    <div class="form-container">
+      <h2>Edit Patient Info</h2>
+      <form id="patientForm">
+        <label>Room Number: <input type="text" id="roomNumber" /></label><br>
+        <label>Patient Name: <input type="text" id="patientName" /></label><br>
+        <label>Patient Age: <input type="number" id="patientAge" /></label><br>
+        <label>Patient Allergies: <input type="text" id="patientAllergies" /></label><br>
+        <label>Patient Medicines: <input type="text" id="patientMedicines" /></label><br>
+        <label>Patient Photo: <input type="file" id="patientPhoto" accept="image/*" /></label><br><br>
+        <button type="submit">Save Info</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
